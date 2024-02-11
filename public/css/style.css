@@ -1,9 +1,7 @@
 :root {
-    --primary: #ccdad1;
-    --secondary: #9caea9;
-    --tertiary: #788585;
-    --light-dark: #6f6866;
-    --dark: #38302e;
+    --primary: #E3E0E5;
+    --light-dark: #000000;
+    --dark: #5A0478;
     --border-radius: 0.3rem;
   }
   
@@ -16,7 +14,7 @@
     margin: 0;
     padding: 0;
     font-family: 'IBM Plex Sans', sans-serif;
-    color: var(--dark);
+    color: var(--light-dark);
     line-height: 1.5;
     font-size: 24px;
   }
@@ -28,7 +26,7 @@
   h6 {
     font-weight: 700;
     margin: 0;
-    color: var(--dark);
+    color: var(--light-dark);
     line-height: 1.25;
   }
   
@@ -46,7 +44,7 @@
   .title {
     font-size: 3rem;
     background-color: var(--primary);
-    color: var(--dark);
+    color: var(--light-dark);
     padding: 0 10px;
     display: inline-block;
     border-radius: var(--border-radius);
@@ -90,13 +88,13 @@
   }
   
   .card-header p {
-    color: var(--secondary);
+    color: var(--primary);
     font-size: small;
     margin-right: 15px;
   }
   
   .post {
-    border-color: var(--dark);
+    border-color: var(--light-dark);
     border-style: solid;
   }
   
@@ -126,7 +124,7 @@
   
   .editSection {
     border-style: solid;
-    border-color: var(--dark);
+    border-color: var(--light-dark);
   }
   
   .editForms {
@@ -157,7 +155,7 @@
   .comment {
     margin-top: 10px;
     border-style: solid;
-    border-color: var(--dark);
+    border-color: var(--light-dark);
     border-width: thin;
   }
   
@@ -175,7 +173,7 @@
   }
   
   .metaDate {
-    color: var(--secondary);
+    color: var(--primary);
     margin-right: 10px;
     font-size: x-small;
   }
