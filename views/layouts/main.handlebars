@@ -1,20 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang='en'>
+
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <title>Tech Blog</title>
-    <link rel="stylesheet" href="/css/styles.css">
-</head>
-<body>
-    <header>
-        <!-- Navigation here -->
-    </header>
-    
-    {{{body}}}
-    
-    <footer>
-        <!-- Footer here -->
-    </footer>
-</body>
+    <link rel='stylesheet' href='/css/style.css' />
+  </head>
+
+  <body>
+
+    <div class='wrapperHeader'>
+      <header class='navHeader'>
+        <div>
+          <nav class='navigation'>
+            <a class='linkHeader' href='/'>home</a>
+            <a class='linkHeader' href='/dashboard'>dashboard</a>
+            {{#if loggedIn}}
+              <a class='linkHeader' href='/' id='logout'>logout</a>
+            {{else}}
+              <a class='linkHeader' href='/login'>login</a>
+            {{/if}}
+          </nav>
+        </div>
+        <h1 class='title'><i class='fab'></i>Tech Blog</h1>
+      </header>
+
+      <main>
+        {{{body}}}
+      </main>
+    </div>
+
+    {{#if loggedIn}}
+      <script src='/js/logout.js'></script>
+    {{/if}}
+
+  </body>
+
 </html>

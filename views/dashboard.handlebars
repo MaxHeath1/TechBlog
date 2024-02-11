@@ -1,17 +1,12 @@
-{{!-- Dashboard for the user to see their posts and options to add new ones --}}
-<h2>Dashboard</h2>
 {{#if posts.length}}
-    <div class="user-posts">
-        {{#each posts}}
-            <div class="post">
-                <h3>{{this.title}}</h3>
-                <p>{{this.content}}</p>
-                <button class="edit-post">Edit</button>
-                <button class="delete-post">Delete</button>
-            </div>
-        {{/each}}
-    </div>
-{{else}}
-    <p>You have not created any posts yet.</p>
+<section>
+  <h2>Your Posts</h2>
+    {{#each posts as |post|}}
+      {{> dashboard-details post}}
+    {{/each}}
+
+</section>
 {{/if}}
-<button class="new-post">Add New Post</button>
+<div class="btn-div">
+  <button type="submit" class="btn"><a class="link" href="/dashboard/new">+ New Post</a></button>
+</div>
